@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Shabnam";
+    src: url(../fonts/Shabnam-Medium.woff2);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #fc9696;
+}
+
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+    direction: rtl;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th, td {
+    padding: 10px 2vw;
+    text-align: right;
+    font-family: "Shabnam";
+}
+
+thead th {
+    background-color: slategrey;
+}
+
+tbody tr {
+    background-color: #85efb5;
+    color: black;
+    text-shadow: 0 0 1px whitesmoke;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #05386b;
+    color: whitesmoke;
+    text-shadow: 0 0 1px black;
+}
